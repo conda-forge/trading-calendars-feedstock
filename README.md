@@ -5,9 +5,11 @@ Home: https://github.com/quantopian/trading_calendars
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/trading-calendars-feedstock/blob/master/LICENSE.txt)
 
 Summary: trading-calendars is a Python library with securities exchange calendars used by Quantopian's Zipline.
+
+Development: https://github.com/quantopian/trading_calendars/
 
 trading-calendars is a Python library with securities exchange calendars used by Quantopian's Zipline.
 
