@@ -1,7 +1,5 @@
 {% set name = "trading-calendars" %}
-{% set version = "1.11.11" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "4fd23451640589a574216446a6b09ef7b8279ae9f2866417da17c2a6302cbd72" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +10,7 @@ source:
   # but in the list of sources for packages, the hyphen is
   # converted to an underscore
   url: https://pypi.io/packages/source/t/trading_calendars/trading_calendars-{{ version }}.tar.gz
-  '{{ hash_type }}': '{{ hash_value }}'
+  sha256: 93bf94d9466fd9f63bc7849d531e48ba307cc3f29eeb14aec126dc851771b0d7
 
 build:
   # The package is pure Python and the recipe is exactly the same for all platforms.
@@ -20,7 +18,7 @@ build:
   # See https://conda-forge.org/docs/maintainer/knowledge_base.html#noarch-python for more details.
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - tcal = trading_calendars.tcal:main
 
@@ -52,7 +50,7 @@ about:
   description: |
     trading-calendars is a Python library with securities exchange calendars used by Quantopian's Zipline.
   doc_url: ''
-  dev_url: 'https://github.com/quantopian/trading_calendars/'
+  dev_url: https://github.com/quantopian/trading_calendars/
 
 extra:
   recipe-maintainers:
