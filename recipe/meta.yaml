@@ -1,5 +1,5 @@
 {% set name = "trading-calendars" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -10,7 +10,7 @@ source:
   # but in the list of sources for packages, the hyphen is
   # converted to an underscore
   url: https://pypi.io/packages/source/t/trading_calendars/trading_calendars-{{ version }}.tar.gz
-  sha256: 93bf94d9466fd9f63bc7849d531e48ba307cc3f29eeb14aec126dc851771b0d7
+  sha256: 2c704740ad5c39e663e8b4a50ee5e37a1614671bccf389fe489232f79d7d985e
 
 build:
   # The package is pure Python and the recipe is exactly the same for all platforms.
